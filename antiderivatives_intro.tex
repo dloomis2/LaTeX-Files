@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{antiderivatives and Differential Equations}
+\author{David Loomis}
+\date{April 2025}
+
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes the text to double-line spacing
+\doublespacing
+
+\begin{document}
+
+\maketitle
+
+\section{Antiderivatives}
+
+\paragraph{Introduction}
+Antiderivatives are the inverse operations of derivatives. In other words, taking the derivative of an antiderivative will give you the original function.\newline
+An example of this is as follows:\newline
+$\frac{dy}{dx}F(x)=f(x)$ , where $F(x)$ is the antiderivative of $f(x)$.\newline
+More specifically, we can use a function such as $f(x)=2x^3+3x^2+2x$.\newline
+To find the antiderivative of this function, we must think of what gives us $f(x)$ after taking the derivative.
+The following is how to solve the problem.\newline
+
+
+\paragraph{Example:}
+
+Use the power rule for antiderivatives, defined as $x^n=\frac{1}{n+1}x^n+1$, where $n\neq -1$\newline
+Applying it to $f(x) \Longrightarrow F(x)=\frac{1}{2}x^4 + x^3+x^2+C$\newline
+Here $C$ refers to an arbitrary constant, since this is a general solution where $C$ could be any number $n$ $s.t.$ 
+$n\in\mathbb{R}$.\newline
+
+\paragraph{Starting with Derivatives:}
+\newline 
+
+Suppose we are given the following:\newline
+
+Find an equation for $f(x)$ where $f''(x)=2sin(x)$, $f(0)=2$ and $f'(0)= \pi$\newline
+
+Taking the antiderivative of $f''(x)$ gives us $f'(x)$\newline
+
+$\Longrightarrow f'(x)=-2\cos(x) + C$\newline
+
+Following the pattern, the antiderivative of $f'(x) = f(x)$\newline
+
+$\Longrightarrow$ $f(x)=-2\sin(x)+Cx+D$\newline
+
+\paragraph{Initial Values:}
+We get another constant, $D$, from taking the derivative again. Exactly like $C$, $D\in\mathbb{R}$
+\newline
+
+Plugging in $0$ into $f'(x)$: $f'(0)=-2\cos(0)+C=\pi$\newline
+
+$f'(0)=-2+C=\pi \Longrightarrow C=\pi+2$\newline
+
+Plugging in $0$ into $f(x)$: $f(0)=-2\sin(0)+Cx+D=2$\newline
+
+$f(0)=-2sin(0)-\pi(0)+D=-2 \Longrightarrow D=2$\newline
+
+With these conditions met, we plug $C$ & $D$ back into $f(x)$:\newline
+
+The final answer is $f(x)=-2\sin(x)+(-\pi+2)x+2$
+
+\end{document}
+
